@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import "./App.css";
+import Header from "./components/Header";
+import Technologies from "./components/Technologies";
+
+export const lightTheme = {
+  body: "#FFF",
+  text: "#0A0C10",
+  background: "rgb(232, 232, 232)",
+};
+export const darkTheme = {
+  body: "#0E141B",
+  text: "#F2F5F7",
+  background: "#151F28",
+};
+
+export const themes = {
+  light: lightTheme,
+  dark: darkTheme,
+};
 
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={themes[theme]}>
+        <Header theme={theme} setTheme={setTheme} />
+        <Technologies theme={theme} />
+      </ThemeProvider>
     </div>
   );
 }
