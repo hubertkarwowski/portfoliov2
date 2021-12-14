@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import styled from "styled-components";
 import { DiReact, DiCss3, DiSass } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -6,83 +6,53 @@ import { SiJavascript, SiStyledcomponents } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { BsBootstrapFill } from "react-icons/bs";
 
-const Technologies = (props) => {
-  const iconsTheme =
-    props.theme === "light" ? (
-      <Fragment>
-        <Icon>
-          <AiFillHtml5 size={70} />
-          <p>HTML</p>
-        </Icon>
-        <Icon>
-          <DiCss3 size={70} />
-          <p>CSS</p>
-        </Icon>
-        <Icon>
-          <SiJavascript size={70} />
-          <p>JavaScript</p>
-        </Icon>
-        <Icon>
-          <DiReact size={70} />
-          <p>React</p>
-        </Icon>
-        <Icon>
-          <SiStyledcomponents size={70} />
-          <p>Styled-Components</p>
-        </Icon>
-        <Icon>
-          <FaGitAlt size={70} />
-          <p>Git</p>
-        </Icon>
-        <Icon>
-          <DiSass size={70} />
-          <p>Sass</p>
-        </Icon>
-        <Icon>
-          <BsBootstrapFill size={70} />
-          <p>Bootstrap 5</p>
-        </Icon>
-      </Fragment>
-    ) : (
-      <Fragment>
-        <Icon>
-          <AiFillHtml5 size={70} color={"#F2F5F7"} />
-          <p>HTML</p>
-        </Icon>
-        <Icon>
-          <DiCss3 size={70} color={"#F2F5F7"} />
-          <p>CSS</p>
-        </Icon>
-        <Icon>
-          <SiJavascript size={70} color={"#F2F5F7"} />
-          <p>JavaScript</p>
-        </Icon>
-        <Icon>
-          <DiReact size={70} color={"#F2F5F7"} />
-          <p>React</p>
-        </Icon>
-        <Icon>
-          <SiStyledcomponents size={70} color={"#F2F5F7"} />
-          <p>Styled-Components</p>
-        </Icon>
-        <Icon>
-          <FaGitAlt size={70} color={"#F2F5F7"} />
-          <p>Git</p>
-        </Icon>
-        <Icon>
-          <DiSass size={70} color={"#F2F5F7"} />
-          <p>Sass</p>
-        </Icon>
-        <Icon>
-          <BsBootstrapFill size={70} color={"#F2F5F7"} />
-          <p>Bootstrap 5</p>
-        </Icon>
-      </Fragment>
-    );
+// import Aos from "aos";
+// import "aos/dist/aos.css";
+
+const Technologies = () => {
+  // useEffect(() => {
+  //   Aos.init({ duration: 800, offset: 300, once: true });
+  // }, []);
+
   return (
     <Container>
       <h2>TECHNOLOGIES</h2>
-      <Icons>{iconsTheme}</Icons>
+      <Icons>
+        <Fragment>
+          <Icon>
+            <AiFillHtml5 size={70} />
+            <p>HTML</p>
+          </Icon>
+          <Icon>
+            <DiCss3 size={70} />
+            <p>CSS</p>
+          </Icon>
+          <Icon>
+            <SiJavascript size={70} />
+            <p>JavaScript</p>
+          </Icon>
+          <Icon>
+            <DiReact size={70} />
+            <p>React</p>
+          </Icon>
+          <Icon>
+            <SiStyledcomponents size={70} />
+            <p>Styled-Components</p>
+          </Icon>
+          <Icon>
+            <FaGitAlt size={70} />
+            <p>Git</p>
+          </Icon>
+          <Icon>
+            <DiSass size={70} />
+            <p>Sass</p>
+          </Icon>
+          <Icon>
+            <BsBootstrapFill size={70} />
+            <p>Bootstrap 5</p>
+          </Icon>
+        </Fragment>
+      </Icons>
     </Container>
   );
 };
@@ -115,6 +85,7 @@ const Icons = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  color: ${(props) => props.theme.text};
 `;
 const Icon = styled.div`
   display: flex;

@@ -60,7 +60,6 @@ const Header = (props) => {
           </ButtonMobile>
           <Toggler onClick={changeTheme}>{icon}</Toggler>
         </Wrap>
-
         <MobileMenu>
           <a href="#">PROJECTS</a>
           <a href="#">TECHNOLOGIES</a>
@@ -75,6 +74,7 @@ const Header = (props) => {
 export default Header;
 
 const Container = styled.header`
+  position: fixed;
   background-color: ${(props) => props.theme.body};
   width: 100%;
   height: 90px;
@@ -82,6 +82,7 @@ const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.1);
   a {
     color: ${(props) => props.theme.text};
     position: relative;
