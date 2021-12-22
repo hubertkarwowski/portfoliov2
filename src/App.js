@@ -11,11 +11,13 @@ export const lightTheme = {
   body: "#FFF",
   text: "#0A0C10",
   background: "rgb(232, 232, 232)",
+  card: "rgba(232, 232, 232, 0.5)",
 };
 export const darkTheme = {
   body: "#0E141B",
   text: "#F2F5F7",
-  background: "#151F28",
+  background: "rgb(21, 31, 40)",
+  card: "rgba(21, 31, 40, 0.8)",
 };
 
 export const themes = {

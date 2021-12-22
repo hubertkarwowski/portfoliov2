@@ -19,7 +19,7 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: ${(props) => props.theme.body};
+  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
 `;
 const Heading = styled.div`
