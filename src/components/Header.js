@@ -83,6 +83,7 @@ const Container = styled.header`
   justify-content: space-between;
   padding: 0 20px;
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.1);
+  z-index: 16;
   a {
     color: ${(props) => props.theme.text};
     position: relative;
