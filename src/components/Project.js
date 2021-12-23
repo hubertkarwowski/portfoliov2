@@ -10,10 +10,10 @@ const Project = ({ title, img, github, link, text }) => {
         <h2>{title}</h2>
         <p>{text}</p>
         <Wrapper>
-          <a href={github}>
+          <a href={github} target="_blank" rel="noreferrer">
             <AiFillGithub size={40} />
           </a>
-          <a href={link}>
+          <a href={link} target="_blank" rel="noreferrer">
             <BsGlobe size={40} />
           </a>
         </Wrapper>
@@ -50,6 +50,7 @@ const Info = styled.div`
   gap: 1rem;
   h2 {
     text-transform: uppercase;
+    font-weight: 300;
   }
   &:hover {
     opacity: 1;

@@ -1,5 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+import { zoomIn } from "react-animations";
 
 const Hero = () => {
   return (
@@ -12,6 +14,8 @@ const Hero = () => {
   );
 };
 
+const zoomAnimation = keyframes`${zoomIn}`;
+
 const Container = styled.section`
   height: 100vh;
   display: flex;
@@ -23,6 +27,7 @@ const Container = styled.section`
   color: ${(props) => props.theme.text};
 `;
 const Heading = styled.div`
+  animation: 1s ${zoomAnimation};
   h1 {
     font-weight: 300;
   }

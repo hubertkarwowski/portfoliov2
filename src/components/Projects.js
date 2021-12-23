@@ -9,35 +9,35 @@ const Projects = () => {
         <Project
           title="Scoot Website"
           text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
+          img="/images/scoot.png"
           github="https://github.com/hubertkarwowski/Scoot"
           link="https://fir-hosting-scoot.web.app/"
         />
         <Project
           title="Starbucks Clone"
           text="I built starbucks clone."
-          img="/images/starbucks.jpg"
+          img="/images/starbucks.png"
           github="https://github.com/hubertkarwowski/starbucks-clone"
           link="https://fir-hosting-starbucks.web.app/"
         />
         <Project
           title="Shop"
           text="Shop project created during course with react, redux, styled components, react-router-dom and firebase."
-          img="/images/shop.jpg"
+          img="/images/shop.png"
           github="https://github.com/hubertkarwowski/shop"
           link="https://crwn-shop2001.herokuapp.com/"
         />
         <Project
           title="Sunnyside Landing page"
           text="I tried to build a site as fast as i can with react and styled-components, site works for 375px and 1440px."
-          img="/images/sunnyside.jpg"
+          img="/images/sunnyside.png"
           github="https://github.com/hubertkarwowski/sunnyside"
           link="https://fir-hosting-sunnyside.web.app/"
         />
         <Project
           title="Weather App"
           text="I built that app to test my JS skills, also implemented auto location and charts."
-          img="/images/weather.jpg"
+          img="/images/weather.png"
           github="https://github.com/hubertkarwowski/weather-app-js"
           link="https://loving-lamport-3cd2aa.netlify.app/"
         />
