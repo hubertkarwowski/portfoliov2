@@ -5,6 +5,8 @@ import { MdClose } from "react-icons/md";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { WiDaySunny } from "react-icons/wi";
 
+import { Link } from "react-scroll";
+
 const Header = (props) => {
   const [burgerStatus, setBurgerStatus] = useState(false);
   const changeTheme = () => {
@@ -47,10 +49,42 @@ const Header = (props) => {
       <Logo>{logo}</Logo>
       <Menu>
         <Toggler onClick={changeTheme}>{icon}</Toggler>
-        <a href="#projects">PROJECTS</a>
-        <a href="#technologies">TECHNOLOGIES</a>
-        <a href="#about">ABOUT ME</a>
-        <a href="#contact">CONTACT</a>
+        <LinkSmooth
+          to="projects"
+          activeClass="active"
+          spy={true}
+          duration={500}
+          smooth={true}
+        >
+          PROJECTS
+        </LinkSmooth>
+        <LinkSmooth
+          to="technologies"
+          activeClass="active"
+          spy={true}
+          duration={500}
+          smooth={true}
+        >
+          TECHNOLOGIES
+        </LinkSmooth>
+        <LinkSmooth
+          to="about"
+          activeClass="active"
+          spy={true}
+          duration={500}
+          smooth={true}
+        >
+          ABOUT ME
+        </LinkSmooth>
+        <LinkSmooth
+          to="contact"
+          activeClass="active"
+          spy={true}
+          duration={500}
+          smooth={true}
+        >
+          CONTACT
+        </LinkSmooth>
       </Menu>
       <Button onClick={() => setBurgerStatus(true)}>{hamburger}</Button>
       <MobileNav show={burgerStatus}>
@@ -61,10 +95,42 @@ const Header = (props) => {
           <Toggler onClick={changeTheme}>{icon}</Toggler>
         </Wrap>
         <MobileMenu>
-          <a href="#projects">PROJECTS</a>
-          <a href="#technologies">TECHNOLOGIES</a>
-          <a href="#about">ABOUT ME</a>
-          <a href="#contact">CONTACT</a>
+          <LinkSmooth
+            to="projects"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            smooth={true}
+          >
+            PROJECTS
+          </LinkSmooth>
+          <LinkSmooth
+            to="technologies"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            smooth={true}
+          >
+            TECHNOLOGIES
+          </LinkSmooth>
+          <LinkSmooth
+            to="about"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            smooth={true}
+          >
+            ABOUT ME
+          </LinkSmooth>
+          <LinkSmooth
+            to="contact"
+            activeClass="active"
+            spy={true}
+            duration={500}
+            smooth={true}
+          >
+            CONTACT
+          </LinkSmooth>
         </MobileMenu>
       </MobileNav>
     </Container>
@@ -72,6 +138,32 @@ const Header = (props) => {
 };
 
 export default Header;
+
+const LinkSmooth = styled(Link)`
+  color: ${(props) => props.theme.text};
+  position: relative;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    background-color: ${(props) => props.theme.text};
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
+`;
 
 const Container = styled.header`
   position: fixed;
