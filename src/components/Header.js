@@ -47,10 +47,10 @@ const Header = (props) => {
       <Logo>{logo}</Logo>
       <Menu>
         <Toggler onClick={changeTheme}>{icon}</Toggler>
-        <a href="#">PROJECTS</a>
-        <a href="#">TECHNOLOGIES</a>
-        <a href="#">ABOUT ME</a>
-        <a href="#">CONTACT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#technologies">TECHNOLOGIES</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#contact">CONTACT</a>
       </Menu>
       <Button onClick={() => setBurgerStatus(true)}>{hamburger}</Button>
       <MobileNav show={burgerStatus}>
@@ -61,10 +61,10 @@ const Header = (props) => {
           <Toggler onClick={changeTheme}>{icon}</Toggler>
         </Wrap>
         <MobileMenu>
-          <a href="#">PROJECTS</a>
-          <a href="#">TECHNOLOGIES</a>
-          <a href="#">ABOUT ME</a>
-          <a href="#">CONTACT</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#technologies">TECHNOLOGIES</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#contact">CONTACT</a>
         </MobileMenu>
       </MobileNav>
     </Container>

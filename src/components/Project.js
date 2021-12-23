@@ -5,7 +5,7 @@ import { BsGlobe } from "react-icons/bs";
 const Project = ({ title, img, github, link, text }) => {
   return (
     <Container>
-      <img src={img} />
+      <img src={img} alt="project showcase" />
       <Info>
         <h2>{title}</h2>
         <p>{text}</p>
@@ -31,6 +31,9 @@ const Container = styled.section`
   img {
     width: 100%;
     height: 100%;
+  }
+  &:hover {
+    transform: scale(1.1);
   }
 `;
 
@@ -60,6 +63,9 @@ const Wrapper = styled.div`
   gap: 3rem;
   a {
     color: ${(props) => props.theme.text};
+    &:hover {
+      color: ${(props) => props.theme.textHover};
+    }
   }
 `;
 

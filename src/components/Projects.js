@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Project from "./Project";
 const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <Title>PROJECTS</Title>
       <Container>
         <Project
@@ -12,71 +12,34 @@ const Projects = () => {
           img="/images/scoot.jpg"
           github="https://github.com/hubertkarwowski/Scoot"
           link="https://fir-hosting-scoot.web.app/"
-          grid="project1"
         />
         <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project2"
+          title="Starbucks Clone"
+          text="I built starbucks clone."
+          img="/images/starbucks.jpg"
+          github="https://github.com/hubertkarwowski/starbucks-clone"
+          link="https://fir-hosting-starbucks.web.app/"
         />
         <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project3"
+          title="Shop"
+          text="Shop project created during course with react, redux, styled components, react-router-dom and firebase."
+          img="/images/shop.jpg"
+          github="https://github.com/hubertkarwowski/shop"
+          link="https://crwn-shop2001.herokuapp.com/"
         />
         <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project4"
+          title="Sunnyside Landing page"
+          text="I tried to build a site as fast as i can with react and styled-components, site works for 375px and 1440px."
+          img="/images/sunnyside.jpg"
+          github="https://github.com/hubertkarwowski/sunnyside"
+          link="https://fir-hosting-sunnyside.web.app/"
         />
         <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project5"
-        />
-        <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project6"
-        />
-        <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project7"
-        />
-        <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project8"
-        />
-        <Project
-          title="Scoot Website"
-          text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
-          img="/images/scoot.jpg"
-          github="https://github.com/hubertkarwowski/Scoot"
-          link="https://fir-hosting-scoot.web.app/"
-          grid="project9"
+          title="Weather App"
+          text="I built that app to test my JS skills, also implemented auto location and charts."
+          img="/images/weather.jpg"
+          github="https://github.com/hubertkarwowski/weather-app-js"
+          link="https://loving-lamport-3cd2aa.netlify.app/"
         />
       </Container>
     </Wrapper>
@@ -100,13 +63,16 @@ const Title = styled.h3`
   @media (min-width: 768px) {
     font-size: 2.5rem;
   }
+  @media (min-width: 1024px) {
+    font-size: 4rem;
+  }
   @media (min-width: 1440px) {
     font-size: 4.5rem;
   }
 `;
 
 const Wrapper = styled.section`
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   background-color: ${(props) => props.theme.body};
 `;
 

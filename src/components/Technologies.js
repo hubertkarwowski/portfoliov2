@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import { DiReact, DiCss3, DiSass } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -6,16 +6,9 @@ import { SiJavascript, SiStyledcomponents } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { BsBootstrapFill } from "react-icons/bs";
 
-// import Aos from "aos";
-// import "aos/dist/aos.css";
-
 const Technologies = () => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 800, offset: 300, once: true });
-  // }, []);
-
   return (
-    <Container>
+    <Container id="technologies">
       <h2>TECHNOLOGIES</h2>
       <Icons>
         <Fragment>
@@ -73,6 +66,9 @@ const Container = styled.section`
     letter-spacing: 10px;
     @media (min-width: 768px) {
       font-size: 2.5rem;
+    }
+    @media (min-width: 1024px) {
+      font-size: 4rem;
     }
     @media (min-width: 1440px) {
       font-size: 4.5rem;
