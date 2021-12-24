@@ -55,12 +55,14 @@ const Header = (props) => {
           spy={true}
           duration={500}
           smooth={true}
+          offset={-220}
         >
           PROJECTS
         </LinkSmooth>
         <LinkSmooth
           to="technologies"
           activeClass="active"
+          offset={-350}
           spy={true}
           duration={500}
           smooth={true}
@@ -71,6 +73,7 @@ const Header = (props) => {
           to="about"
           activeClass="active"
           spy={true}
+          offset={-250}
           duration={500}
           smooth={true}
         >
