@@ -42,7 +42,7 @@ function App() {
         <Technologies />
         <About />
         <Contact />
-        <Footer />
+        <Footer theme={theme} />
       </ThemeProvider>
     </div>
   );
