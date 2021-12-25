@@ -41,6 +41,13 @@ const Projects = () => {
           github="https://github.com/hubertkarwowski/weather-app-js"
           link="https://loving-lamport-3cd2aa.netlify.app/"
         />
+        <Project
+          title="Old Portfolio"
+          text="This was my first portfolio website. Everything here is build by me with my design and code."
+          img="/images/oldportfoli.png"
+          github="https://github.com/hubertkarwowski/portfolio"
+          link="https://fir-hosting-portfolio-bca68.web.app/"
+        />
       </Container>
     </Wrapper>
   );
