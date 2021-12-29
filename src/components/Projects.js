@@ -7,6 +7,13 @@ const Projects = () => {
       <Title>PROJECTS</Title>
       <Container>
         <Project
+          title="LinkedIn clone"
+          text="LinkedIn clone built with React, styled-components, Redux and connected to a firebase database with login page and authorization"
+          img="/images/linkedin.png"
+          github="https://github.com/hubertkarwowski/linkedin-clone"
+          link="https://linkedin-clone-3a8ee.web.app/"
+        />
+        <Project
           title="Scoot Website"
           text="This is a multi-page website created with react, react-router and styled-components and smooth animations."
           img="/images/scoot.png"
