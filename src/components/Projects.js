@@ -4,7 +4,7 @@ import Project from "./Project";
 const Projects = () => {
   return (
     <Wrapper id="projects">
-      <Title>PROJECTS</Title>
+      <Title>MY PROJECTS</Title>
       <Container>
         <Project
           title="LinkedIn clone"
@@ -20,33 +20,13 @@ const Projects = () => {
           github="https://github.com/hubertkarwowski/Scoot"
           link="https://fir-hosting-scoot.web.app/"
         />
+
         <Project
-          title="Starbucks Clone"
-          text="I built starbucks clone."
-          img="/images/starbucks.png"
-          github="https://github.com/hubertkarwowski/starbucks-clone"
-          link="https://fir-hosting-starbucks.web.app/"
-        />
-        <Project
-          title="Shop"
-          text="Shop project created during course with react, redux, styled components, react-router-dom and firebase."
+          title="CRWN | SHOP"
+          text="CRWN | Shop is a website with login functionality created with React, Redux, styled-components and Firebase."
           img="/images/shop.png"
           github="https://github.com/hubertkarwowski/shop"
           link="https://crwn-shop2001.herokuapp.com/"
-        />
-        <Project
-          title="Sunnyside Landing page"
-          text="I tried to build a site as fast as i can with react and styled-components, site works for 375px and 1440px."
-          img="/images/sunnyside.png"
-          github="https://github.com/hubertkarwowski/sunnyside"
-          link="https://fir-hosting-sunnyside.web.app/"
-        />
-        <Project
-          title="Weather App"
-          text="I built that app to test my JS skills, also implemented auto location and charts."
-          img="/images/weather.png"
-          github="https://github.com/hubertkarwowski/weather-app-js"
-          link="https://loving-lamport-3cd2aa.netlify.app/"
         />
         <Project
           title="Old Portfolio"
