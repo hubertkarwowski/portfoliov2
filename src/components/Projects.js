@@ -7,6 +7,13 @@ const Projects = () => {
       <Title>MY PROJECTS</Title>
       <Container>
         <Project
+          title="HappyPizza Shop"
+          text="HappyPizza is my shop built from scratch using MERN stack, Redux-Toolkit, Chakra-UI and Stripe ."
+          img="/images/PizzaShop.png"
+          github="https://github.com/hubertkarwowski/happypizza"
+          link="https://elegant-bohr-6a5aa5.netlify.app/"
+        />
+        <Project
           title="LinkedIn clone"
           text="LinkedIn clone built with React, styled-components, Redux and connected to a firebase database with login page and authorization"
           img="/images/linkedin.png"
