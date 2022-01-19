@@ -27,6 +27,12 @@ const Projects = () => {
           github="https://github.com/hubertkarwowski/Scoot"
           link="https://fir-hosting-scoot.web.app/"
         />
+        <Project
+          title="Designo"
+          text="This is a multi-page website created with Sass, Gulp, CSSNano and other useful libraries."
+          img="/images/designo.png"
+          github="https://github.com/hubertkarwowski/designo.github.io"
+        />
 
         <Project
           title="CRWN | SHOP"
